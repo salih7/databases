@@ -4,6 +4,8 @@ CREATE DATABASE chat;
 
 USE chat;
 
+DROP TABLE IF EXISTS `messages`;
+
 CREATE TABLE `messages` (
   `id` INTEGER AUTO_INCREMENT,
   `username` MEDIUMTEXT NULL DEFAULT NULL,

@@ -8,17 +8,16 @@ module.exports = {
     }, // a function which handles a get request for all messages
       
     post: function (req, res) {
-      console.log(typeof req.body);
       console.log('***********POSTINCONT*****************hello world');
-      models.messages.post(req.body);
-      //res.end('hello world');
+      console.log(req.body);
+      models.messages.post(req.body, res);
     } // a function which handles posting a message to the database
   },
 
   users: {
     // Ditto as above
     get: function (req, res) {
-       console.log('*************GETINCONTUSER**************hello world');
+      console.log('*************GETINCONTUSER**************hello world');
     },
     post: function (req, res) {
       console.log('*************POSTINCONTSUER**************hello world');
