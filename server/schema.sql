@@ -7,16 +7,12 @@ USE chat;
 DROP TABLE IF EXISTS `messages`;
 
 CREATE TABLE `messages` (
-  `id` INTEGER AUTO_INCREMENT,
+  `objectId` INTEGER AUTO_INCREMENT,
   `username` MEDIUMTEXT NULL DEFAULT NULL,
-  `message` MEDIUMTEXT NULL DEFAULT NULL,
+  `text` MEDIUMTEXT NULL DEFAULT NULL,
   `roomname` MEDIUMTEXT NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`objectId`)
 );
-
--- CREATE TABLE messages (
-  /* Describe your table here.*/
--- );
 
 /* Create other tables and define schemas for them here! */
 
